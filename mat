@@ -5,7 +5,7 @@ fclose(fileID)
 %xlsread
 fileID = fopen ('fog_acs_cs_1.csv')
 filename = 'fog_acs_cs_1.csv';
-A = xlsread('fog_acs_cs_1.csv')
+raw = xlsread('fog_acs_cs_1.csv')
 sheet = 1;
 %77 colunas, de A:BY
 %12958 linhas, at? 11775 todas as colunas, 11776 vazia, 11777 novo cabe?alho, 11778 dado coluna A, 11779:11781 cabe?alho novo (cinem?tica), 11782:12958 novos dados colunas A:E
