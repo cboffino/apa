@@ -11,3 +11,18 @@ sheet = 1;
 %12958 linhas, at? 11775 todas as colunas, 11776 vazia, 11777 novo cabe?alho, 11778 dado coluna A, 11779:11781 cabe?alho novo (cinem?tica), 11782:12958 novos dados colunas A:E
 subsetA = xlsread(fog_acs_cs_1,1,xlRange)
 [num,txt,raw] = xlsread('fog_acs_cs_1.csv')
+
+error
+apa_mat
+
+fileID =
+
+     5
+
+Error using xlsread (line 245)
+Unable to read XLS file /Users/lim44/Desktop/Pe_na_tabua/Catarina_Boffino/fog_acs_cs_1.csv. File is not in recognized format.
+
+Error in apa_mat (line 4)
+raw = xlsread('fog_acs_cs_1.csv')
+ 
+>> 
