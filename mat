@@ -1,56 +1,4 @@
 %xlsread
-fileID = fopen ('fog_acs_cs_1_copy.xls')
-filename = 'fog_acs_cs_1_copy.xls'
-num = xlsread('fog_acs_cs_1_copy.xls')
-sheet = 1;
-%77 colunas, de A:BY
-%12958 linhas, at? 11775 todas as colunas, 11776 vazia, 11777 novo cabe?alho, 11778 dado coluna A, 11779:11781 cabe?alho novo (cinem?tica), 11782:12958 novos dados colunas A:E
-subsetA = xlsread(fog_acs_cs_1,1,xlRange)
-[num,txt,raw] = xlsread('fog_acs_cs_1_copy.xls')
-
-%textscan
-%fileID = fopen('fog_acs_cs_1.csv');
-%C = textscan(fileID,'%f %f %f %f','Delimiter',',',... 'MultipleDelimsAsOne',1);
-%fclose(fileID);
-
-output/error
-fileID =
-
-     3
-
-
-filename =
-
-fog_acs_cs_1.csv
-
-Error using xlsread (line 245)
-Unable to read XLS file /Users/lim44/Desktop/Pe_na_tabua/Catarina_Boffino/fog_acs_cs_1.csv. File is not in recognized format.
-
-Error in apa_mat (line 4)
-num = xlsread('fog_acs_cs_1.csv')
- 
->> apa_mat
-
-fileID =
-
-     4
-
-
-filename =
-
-fog_acs_cs_1_copy.xls
-
-Error using xlsread (line 245)
-Error reading record for cells starting at column 13.  Try saving as Excel 98.
-
-
-Error in apa_mat (line 4)
-num = xlsread('fog_acs_cs_1_copy.xls')
- 
->> 
-
-%outra tentativa
-%xlsread
 %fileID = fopen ('fog_acs_cs_1_copy.xls')
 %filename = 'fog_acs_cs_1_copy.xls'
 %num = xlsread('fog_acs_cs_1_copy.xls')
@@ -62,9 +10,11 @@ num = xlsread('fog_acs_cs_1_copy.xls')
 
 %textscan
 fileID = fopen('fog_acs_cs_1.csv');
-C = textscan(fileID,'%f %f %f %f','Delimiter',',',... 'MultipleDelimsAsOne',1);
+filename = fullfile(matlabroot,'users','lim44','Desktop''Pe_na_tabua','Catarina_Boffino','Matlab','data.csv');
+C = textscan(fileID,'%f','Delimiter',',',... 'MultipleDelimsAsOne',1);
 fclose(fileID)
 
+error
 >> apa_mat
-Error: File: apa_mat.m Line: 14 Column: 15
+Error: File: apa_mat.m Line: 15 Column: 15
 This statement is incomplete.
