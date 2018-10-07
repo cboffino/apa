@@ -8,6 +8,7 @@
 %subsetA = xlsread(fog_acs_cs_1,1,xlRange)
 %[num,txt,raw] = xlsread('fog_acs_cs_1_copy.xls')
 
+%Carregar arquivo
 %textscan
 fileID = fopen('fog_acs_cs_1.csv');
 filename = fullfile(matlabroot,'users','lim44','Desktop''Pe_na_tabua','Catarina_Boffino','Matlab','data.csv');
@@ -18,3 +19,17 @@ error
 >> apa_mat
 Error: File: apa_mat.m Line: 15 Column: 15
 This statement is incomplete.
+
+%identificar o grupo
+%carregar todos os participantes
+%separar os grupos
+%colocar os dados de id, idade, sexo, altura, peso em uma tabela
+&identificar as condições de teste (com apa e sem apa)
+%identificar os testes (cinemática, cinética)
+%ler os dados condição 1
+%analisar e calcular variáveis
+%repetir para cada condição
+%repetir para cada teste
+%calcular variáveis entre condições
+%análise estatística para variáveis de cada condição e de cada teste
+%análise estatística de variáveis entre condições
